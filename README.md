@@ -105,3 +105,5 @@ POLYMORPHISM :
 
 1. COMPILE TIME -> Operator Overloading , Function Overloading
 2. RUN TIME -> Virtual Function , Function Overloading
+
+VIRTAUL DISTRUCTORS:
