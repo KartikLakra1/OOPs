@@ -85,10 +85,9 @@ eg class derived : public parent{}; or class derived : protected parent{};
 POLYMORPHISM
 1.BASE CLASS POINTER AND DERIVED CLASS OBJECT -> can only access features of base class. eg basic car(base class) inherited by advanced car (derived class).
 
-2. VIRTUAL FUNCTION -> virtual means existing in appearance but not in reality. while virtual function means a function existing in class but can'
-   t be used.
-   Hence Program that appears to be calling a function of one class may in reality be calling a funtion of different class. eg:
-   Late Binding : compiler deferr the decision untill, the program is running and at runtime when it come to knoow which class is pointed by ptr, then appropriate function would be called . This is called Dynamic Binding/ Late Binding.
+2.VIRTUAL FUNCTION -> virtual means existing in appearance but not in reality. while virtual function means a function existing in class but can't be used.
+Hence Program that appears to be calling a function of one class may in reality be calling a funtion of different class. eg:
+Late Binding : compiler deferr the decision untill, the program is running and at runtime when it come to knoow which class is pointed by ptr, then appropriate function would be called . This is called Dynamic Binding/ Late Binding.
 
 3.ABSTRACT CLASS :
 An abstract class in OOP is a class that cannot be instantiated on its own and is intended to be inherited by other classes. It provides a blueprint or a template for other classes to follow, defining a common structure and a set of methods that must be implemented by its subclasses.
