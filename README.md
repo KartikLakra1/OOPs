@@ -115,3 +115,6 @@ Rules for virtual destructors
 Base class: A base class with virtual functions should have a virtual destructor.
 Derived classes: Derived classes do not need virtual destructors if they do not override the base class’s virtual destructor.
 Protected and non-virtual: If you want to prevent deletion of an object through a base class pointer, make the base class destructor protected and non-virtual.
+
+STATIC MEMBER:
+static memeber would be allocated memory only once , and that memory is shared by both the objects , static data members belond to a class and common to all objects.
