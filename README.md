@@ -105,4 +105,13 @@ POLYMORPHISM :
 1. COMPILE TIME -> Operator Overloading , Function Overloading
 2. RUN TIME -> Virtual Function , Function Overloading
 
-VIRTAUL DISTRUCTORS:
+VIRTUAL DISTRUCTORS:
+A virtual destructor is a special type of destructor in C++ that is declared as virtual in a base class. Its purpose is to ensure that when an object of a derived class is deleted through a pointer to its base class, the correct destructor is called.
+
+Why are virtual destructors necessary?
+Polymorphic destruction: When you have a hierarchy of classes with a common base class, and you delete an object of a derived class through a pointer to its base class, the compiler will only know about the base class’s destructor. Without a virtual destructor, the base class’s destructor will be called, potentially leading to undefined behavior or memory leaks.
+Correct destruction order: A virtual destructor ensures that the destructors are called in the correct order, from most-derived to base classes, when an object is deleted polymorphically.
+Rules for virtual destructors
+Base class: A base class with virtual functions should have a virtual destructor.
+Derived classes: Derived classes do not need virtual destructors if they do not override the base class’s virtual destructor.
+Protected and non-virtual: If you want to prevent deletion of an object through a base class pointer, make the base class destructor protected and non-virtual.
