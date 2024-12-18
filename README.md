@@ -118,3 +118,4 @@ Protected and non-virtual: If you want to prevent deletion of an object through 
 
 STATIC MEMBER:
 static memeber would be allocated memory only once , and that memory is shared by both the objects , static data members belond to a class and common to all objects.
+static member can only access static members, means static member function only used to modify member variables.
